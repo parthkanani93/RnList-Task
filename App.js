@@ -10,6 +10,7 @@ import React from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/screens/Home';
+import Animation from './src/screens/Animation';
 import PersonDetails from './src/screens/PersonDetails';
 
 const Stack = createNativeStackNavigator();
@@ -19,8 +20,7 @@ const App = () => {
     <SafeAreaView style={styles.mainContainer}>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Detail" component={PersonDetails} />
+          <Stack.Screen name="Animation" component={Animation} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
